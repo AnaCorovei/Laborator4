@@ -5,6 +5,10 @@ VisualStudioVersion = 16.0.32228.343
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Laborator4", "Laborator4\Laborator4.csproj", "{F83C461E-EB3B-42D2-8B8B-4CE91F54FB2F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "functiirecursive", "functiirecursive\functiirecursive.csproj", "{C402D093-D81C-423C-B8C7-9433260C67E7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "laborator4exercitii", "laborator4exercitii\laborator4exercitii.csproj", "{698040A5-C56F-4874-A65E-56EC307671D0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{F83C461E-EB3B-42D2-8B8B-4CE91F54FB2F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F83C461E-EB3B-42D2-8B8B-4CE91F54FB2F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F83C461E-EB3B-42D2-8B8B-4CE91F54FB2F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C402D093-D81C-423C-B8C7-9433260C67E7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C402D093-D81C-423C-B8C7-9433260C67E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C402D093-D81C-423C-B8C7-9433260C67E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C402D093-D81C-423C-B8C7-9433260C67E7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{698040A5-C56F-4874-A65E-56EC307671D0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{698040A5-C56F-4874-A65E-56EC307671D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{698040A5-C56F-4874-A65E-56EC307671D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{698040A5-C56F-4874-A65E-56EC307671D0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
