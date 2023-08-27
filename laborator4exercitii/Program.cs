@@ -10,9 +10,10 @@ namespace laborator4exercitii
             //Ex2();
             //Ex3();
             //Ex4();
-            Ex5();
+            //Ex5();
             //Ex6();
             //Ex7();
+            Ex8supliment();
         }
 
 
@@ -211,7 +212,8 @@ namespace laborator4exercitii
             apelati-o si afisati-i rezultatul.
              */
             Console.WriteLine("Introduceti un numar:");
-            SumaNumerelor(int.Parse(Console.ReadLine()));
+            int n = int.Parse(Console.ReadLine());
+            //SumaNumerelor(int.Parse(Console.ReadLine()));
             Console.WriteLine("Suma este:" + SumaNumerelor(int.Parse(Console.ReadLine())));
         }
 
@@ -221,10 +223,91 @@ namespace laborator4exercitii
             {
                 return 1;
             }
-            return n = SumaNumerelor(n - 1);
+            return n + SumaNumerelor(n - 1);
 
+        }
+
+        static void Ex6()
+        {
+            /*
+             Ex 6 dificultate ridicata
+            Scrieti o functie recursiva care va calcula al n-lea element din sirul lui
+            Fibonacci, n fiind citit de la tastatura, apelati-o si afisati-I rezultatul
+
+            fn=f(n-1) + f(n-2) //regula de la fibonacii
+            1 1 2 3 5 8 13...
+            1 2 3 4 5 6 7 ..
+
+             */
+            Console.WriteLine("Introduceti nr:");
+            int n = int.Parse(Console.ReadLine());
+            Console.Write(GetFibonacii(n));
+        }
+            
+        static int GetFibonacii(int n)
+        {     
+            if (n==1 || n==2 )
+            {
+                return 1;
+            }
+
+            return GetFibonacii(n - 1) + GetFibonacii(n - 2); ;
+        }
+        
+        static void Ex7()
+        {
+            /*
+             Ex 7 dificultate ridicata
+            Scrieti o functie recursiva care pentru un numar “n” primit ca parametru, va
+            afisa urmatoarea piramida a numerelor:
+            1
+            2 2
+            3 3 3
+            4 4 4 4
+            …
+            n n n ….n 
+            */
+            ShowPyramid(int.Parse(Console.ReadLine()));
+        }
+
+        static void ShowPyramid (int n)
+        {
+            if (n <= 0)
+            {
+                return;
+            }
+            ShowPyramid(n - 1);
+            for (int i = 0; i< n; i++)
+            {
+                Console.Write(n);
+            }
+            Console.WriteLine();
+        }
+        static void Ex8supliment()
+        {
+            /*
+             Se citesc doua numere de la tastatura. Scrieti un program care va calcula
+             cel mai mare divizor comun al numerelor
+            */
+            Console.WriteLine("Introduceti nr1:");
+            int n = int.Parse(Console.ReadLine());
+            Console.WriteLine("Introduceti nr2:");
+
+            int m = int.Parse(Console.ReadLine());
+            Console.WriteLine("CMCD este:" + ShowCMDC(n,m));
+        
+        }
+        static int ShowCMDC(int n, int m)
+        {
+            while (n!=m)
+            {
+                if (n>m)
+                {
+                    return n = n - m;
+                }
+                return m = m - n;
+            }
+            return 0;
         }
     }
 }
-
-
